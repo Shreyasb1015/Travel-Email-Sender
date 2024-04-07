@@ -15,7 +15,7 @@ import re
 st.title("Trip-Planner")
 
 
-os.environ['GOOGLE_API_KEY'] = "AIzaSyAKy0DBzkk0lyMtaZym9KilBjq4SjTOg_4"
+os.environ['GOOGLE_API_KEY'] = "YOUR_API_KEY"
 genai.configure(api_key = os.environ['GOOGLE_API_KEY'])
 
 location=st.text_input("Enter the location you want to visit")
@@ -87,11 +87,11 @@ if st.button("Generate Itinerary and Send Via Mail"):
     smtp_server = "smtp.gmail.com"  
 
     # Set up the email lists
-    email_from = "uniquestar1015@gmail.com"
+    email_from = "YOUR_EMAIL"
     email_list = [email]
 
     
-    pswd = "krdl gwsj regh qatb" 
+    pswd = "YOUR_EMAIL_KEY" 
 
 
     # name the email subject
